@@ -1,0 +1,44 @@
+- type: gameMap
+  id: Snowflake
+  mapName: 'Snowflake'
+  mapPath: /Maps/snowflake.yml
+  minPlayers: 0
+  maxPlayers: 20
+  stations:
+    Snowflake:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Snowflake {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'SC'
+        - type: StationArrivals
+          shuttlePath: /Maps/Shuttles/arrivals_snowflake.yml
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_snowflake.yml
+        - type: StationJobs
+          availableJobs:
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            # HeadOfSecurity: [ 1, 1 ]
+            SecurityOfficer: [ 1, 1 ]
+            Detective: [ 1, 1 ]
+            Cyborg: [ 1, 1 ]            
+            CargoTechnician: [ 1, 2 ]
+            SalvageSpecialist: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chef: [ 1, 1 ]
+            ServiceWorker: [ 1, 2 ]
+            MedicalDoctor: [ 1, 2 ]
+            Chemist: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            AtmosphericTechnician: [ 1, 1 ]
+            StationEngineer: [ 1, 2 ]
+            Scientist: [ 1, 2 ]
+            Passenger: [ -1, -1 ]
+
