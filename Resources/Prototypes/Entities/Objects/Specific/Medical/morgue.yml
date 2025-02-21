@@ -95,7 +95,7 @@
   id: BodyBagCBRN
   parent: BodyBag
   name: CBRN Body Bag
-  description: An incredibly lightweight body bag made from advanced materials, for when there are more corpses then people. 
+  description: An incredibly lightweight body bag made from advanced materials, for when there are more corpses than people. 
   components:
   - type: Item
     size: Tiny
@@ -119,7 +119,7 @@
 - type: entity
   id: BodyBagCBRNFolded
   name: CBRN body bag
-  description: An incredibly lightweight body bag made from advanced materials, for when there are more corpses then people. 
+  description: An incredibly lightweight body bag made from advanced materials, for when there are more corpses than people. 
   parent: BodyBagCBRN
   suffix: folded
   components:

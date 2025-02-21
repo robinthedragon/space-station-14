@@ -104,7 +104,7 @@
   name: zombie medical kit
   description: "For when the dead walk the earth."
   parent: Medkit
-  id: MedkitZomb
+  id: MedkitZombie
   components:
   - type: Sprite
     state: zombkit

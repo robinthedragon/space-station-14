@@ -107,6 +107,24 @@
         - BodyBag
 
 - type: entity
+  name: body bag box
+  parent: BoxCardboard
+  id: BoxBodyBagCBRN
+  description: Contains body bags.
+  components:
+  - type: StorageFill
+    contents:
+      - id: BodyBagCBRNFolded
+        amount: 9
+  - type: Sprite
+    layers:
+      - state: box
+      - state: bodybags
+    whitelist:
+      tags:
+        - BodyBag
+
+- type: entity
   name: vial box
   parent: BoxCardboard
   id: BoxVial
