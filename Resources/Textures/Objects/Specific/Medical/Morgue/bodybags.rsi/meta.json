@@ -27,6 +27,12 @@
     },
     {
       "name": "invoice"
+    },
+    {
+      "name": "bagcbrn"
+    },
+    {
+      "name": "bagcbrn_folded"
     }
   ]
 }

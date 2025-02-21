@@ -92,6 +92,42 @@
     price: 50
 
 - type: entity
+  id: BodyBagCBRN
+  parent: BodyBag
+  name: CBRN Body Bag
+  description: An incredibly lightweight body bag made from advanced materials, for when there are more corpses then people. 
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    drawdepth: SmallObjects # I guess body bags need appear above a coroner's table?
+    sprite: Objects/Specific/Medical/Morgue/bodybags.rsi
+    layers:
+    - state: bagcbrn
+      map: ["unfoldedLayer", "enum.StorageVisualLayers.Base"]
+    - state: bagcbrn_folded
+      map: ["foldedLayer"]
+      visible: false
+    - state: open_overlay
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: paper
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: Icon
+    sprite: Objects/Specific/Medical/Morgue/bodybags.rsi
+    state: bagcbrn
+
+- type: entity
+  id: BodyBagCBRNFolded
+  name: CBRN body bag
+  description: An incredibly lightweight body bag made from advanced materials, for when there are more corpses then people. 
+  parent: BodyBagCBRN
+  suffix: folded
+  components:
+  - type: Foldable
+    folded: true
+  
+
+- type: entity
   id: BodyBagFolded
   name: body bag
   description: A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.

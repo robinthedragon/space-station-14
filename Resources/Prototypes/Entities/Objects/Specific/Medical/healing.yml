@@ -766,6 +766,19 @@
               Quantity: 5
 
 - type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterAmbuzolPlus
+  suffix: Ambuzol Plus 5u, 8
+  components:
+  - type: Label
+    currentLabel: ambuzol plus
+  - type: StorageFill
+    contents:
+    - id: PillAmbuzolPlus
+      amount: 8
+
+- type: entity
   parent: PillCanister
   id: PillCanisterRandom
   suffix: Random
