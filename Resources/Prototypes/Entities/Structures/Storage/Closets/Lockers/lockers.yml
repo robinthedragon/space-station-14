@@ -481,3 +481,67 @@
     stateBaseClosed: hop
     stateDoorOpen: hop_open
     stateDoorClosed: representative_door
+
+# CBRN
+
+- type: entity
+  id: LockerCBRN
+  name: CBRN locker
+  parent: LockerBaseSecure
+  description: A generic locker for containing specialized gear.
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: cbrn
+    stateDoorOpen: cbrn_open
+    stateDoorClosed: cbrn_door
+
+- type: entity
+  id: LockerCBRNBio
+  name: CBRN biological locker
+  parent: LockerCBRN
+  description: Specialized gear for when the station has been swept by a deadly plague. 
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cbrn_bio
+    stateDoorOpen: cbrn_bio_open
+    stateDoorClosed: cbrn_bio_door
+
+- type: entity
+  id: LockerCBRNNuclear
+  name: CBRN nuclear locker
+  parent: LockerCBRN
+  description: Specialized gear for when the singularity's been loosed. 
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cbrn_nuclear
+    stateDoorOpen: cbrn_nuclear_open
+    stateDoorClosed: cbrn_nuclear_door
+
+- type: entity
+  id: LockerCBRNAnom
+  name: CBRN anomalous locker
+  parent: LockerCBRN
+  description: Specialized gear for when the science department fucked up. 
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cbrn_anom
+    stateDoorOpen: cbrn_anom_open
+    stateDoorClosed: cbrn_anom_door
+
+- type: entity
+  id: LockerCBRNChemical
+  name: CBRN chemical locker
+  parent: LockerCBRN
+  description: Specialized gear for when the station's air quality is dangerously poor. 
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cbrn_chemical
+    stateDoorOpen: cbrn_chemical_open
+    stateDoorClosed: cbrn_chemical_door

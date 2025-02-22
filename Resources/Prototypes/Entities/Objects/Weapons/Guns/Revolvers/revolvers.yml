@@ -79,6 +79,14 @@
     price: 1500
 
 - type: entity
+  parent: WeaponRevolverDeckard
+  id: WeaponRevolverDeckardIncendiary # For CBRN
+  suffix: incendiary
+  components:
+  - type: RevolverAmmoProvider
+    proto: CartridgeMagnumIncendiary
+
+- type: entity
   name: Inspector
   parent: [BaseWeaponRevolver, BaseSecurityContraband]
   id: WeaponRevolverInspector

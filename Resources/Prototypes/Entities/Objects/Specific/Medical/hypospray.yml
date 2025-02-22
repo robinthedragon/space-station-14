@@ -413,6 +413,43 @@
     tags: []
 
 - type: entity
+  name: zombie medipen
+  parent: ChemicalMedipen
+  id: ZombieMedipen
+  description: A specialized cocktail of chemicals that heals bite wounds and prevents zombification.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: hypovolemic
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: hypovolemic_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 30
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+          - ReagentId: Ambuzol
+            Quantity: 10
+          - ReagentId: Bicaridine
+            Quantity: 10
+          - ReagentId: Diphenhydramine
+            Quantity: 5
+          - ReagentId: TranexamicAcid
+            Quantity: 5
+  - type: Tag
+    tags: []
+
+- type: entity
   name: hyperzine injector
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: Stimpack

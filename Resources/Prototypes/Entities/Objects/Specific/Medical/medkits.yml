@@ -100,3 +100,15 @@
     heldPrefix: blackkit
     size: Normal
 
+- type: entity
+  name: zombie medical kit
+  description: "For when the dead walk the earth."
+  parent: Medkit
+  id: MedkitZombie
+  components:
+  - type: Sprite
+    state: zombkit
+  - type: Item
+    heldPrefix: zombkit
+    size: Normal
+

@@ -1,0 +1,70 @@
+- type: entity
+  id: LockerCBRNFilled
+  suffix: Filled
+  parent: LockerCBRN
+  components:
+  - type: StorageFill
+    contents:
+      - id: JawsOfLife
+        amount: 3
+      - id: RCDRecharging
+        amount: 3
+      - id: ClothingBackpackDuffelCBURN
+        amount: 3
+
+- type: entity
+  id: LockerCBRNBioFilled
+  suffix: Filled
+  parent: LockerCBRNBio
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxBodyBagCBRN
+        amount: 3
+      - id: MedkitZombieFilled
+        amount: 3
+
+- type: entity
+  id: LockerCBRNNuclearFilled
+  suffix: Filled
+  parent: LockerCBRNNuclear
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponParticleDecelerator
+        amount: 3
+      - id: MedkitRadiationFilled
+        amount: 3
+
+- type: entity
+  id: LockerCBRNChemicalFilled
+  suffix: Filled
+  parent: LockerCBRNChemical
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxEmergencyMasks
+        amount: 3
+      - id: BoxInflatable
+        amount: 3
+#      - id: RPD
+#        amount: 3
+# uncomment once it's added
+
+- type: entity
+  id: LockerCBRNAnomFilled
+  suffix: Filled
+  parent: LockerCBRNAnom
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPistolCHIMP
+        amount: 3
+      - id: AnomalyScanner
+        amount: 3
+      - id: AnomalyLocatorUnpowered
+        amount: 3
+      - id: AnomalyLocatorWideUnpowered
+        amount: 3
+      - id: WeaponGauntletGorilla
+        amount: 3

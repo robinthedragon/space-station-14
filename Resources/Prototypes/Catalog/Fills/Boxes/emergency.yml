@@ -19,6 +19,24 @@
     - state: emergencytank
 
 - type: entity
+  parent: BoxCardboard
+  id: BoxEmergencyMasks
+  name: breath mask box
+  description: It's a box with enough internals for 3 people. As long as 2 of them breathe oxygen and 1 of them breathes nitrogen, that is.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingMaskBreath
+      amount: 3
+    - id: EmergencyOxygenTankFilled
+      amount: 2
+    - id: EmergencyNitrogenTankFilled
+  - type: Sprite
+    layers:
+    - state: internals
+    - state: emergencytank
+
+- type: entity
   parent: BoxSurvival
   id: BoxSurvivalNitrogen
   suffix: Standard N2
