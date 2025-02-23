@@ -152,6 +152,51 @@
       "name": "cargo_open"
     },
     {
+      "name": "cbrn"
+    },
+    {
+      "name": "cbrn_door"
+    },
+    {
+      "name": "cbrn_open"
+    },
+    {
+      "name": "cbrn_bio"
+    },
+    {
+      "name": "cbrn_bio_door"
+    },
+    {
+      "name": "cbrn_bio_open"
+    },
+    {
+      "name": "cbrn_nuclear"
+    },
+    {
+      "name": "cbrn_nuclear_door"
+    },
+    {
+      "name": "cbrn_nuclear_open"
+    },
+    {
+      "name": "cbrn_anom"
+    },
+    {
+      "name": "cbrn_anom_door"
+    },
+    {
+      "name": "cbrn_anom_open"
+    },
+    {
+      "name": "cbrn_chemical"
+    },
+    {
+      "name": "cbrn_chemical_door"
+    },
+    {
+      "name": "cbrn_chemical_open"
+    },
+    {
       "name": "ce"
     },
     {

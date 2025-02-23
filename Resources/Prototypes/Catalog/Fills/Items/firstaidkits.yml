@@ -101,6 +101,19 @@
       - id: BurnAutoInjector
 
 - type: entity
+  id: MedkitZombieFilled
+  suffix: Filled
+  parent: MedkitZombie
+  components:
+  - type: StorageFill
+    contents:
+      - id: PillCanisterAmbuzolPlus
+      - id: ZombieMedipen
+        amount: 3
+      - id: MedicatedSuture
+        amount: 2
+
+- type: entity
   id: StimkitFilled
   suffix: Stimkit, Filled
   parent: Medkit
